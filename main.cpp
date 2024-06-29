@@ -14,11 +14,13 @@ int main() {
     int arr[] = {2, 4, 6, 8, 10, 12, 14};
 
     swap(vec, arr);
+    std::cout << "vector after swap:" << std::endl;
     for (int i : vec) {
         std::cout << i << " ";
     }
 
     std::cout << std::endl;
+    std::cout << "array after swap:" << std::endl;
 
     for (int i : arr) {
         std::cout << i << " ";
