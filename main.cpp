@@ -3,8 +3,8 @@
 
 void swap(std::vector<int> &vec, int *arr) {
     for (int i = 0; i < vec.size(); i++) {
-        int temp = arr[i];
-        arr[i] = vec[i];
+        int temp = *(arr + i);
+        *(arr + i) = vec[i];
         vec[i] = temp;
     }
 }
